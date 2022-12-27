@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7267d5129f824afab748250aca27c4de" Name="Diagram1">
+        <EntityTypeShape EntityType="PESQUISACLIENTEModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PESQUISACLIENTEModel.TB_IMPORTANCIA" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PESQUISACLIENTEModel.TB_SATISFACAO" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4" ManuallyRouted="false" />
+        <AssociationConnector Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

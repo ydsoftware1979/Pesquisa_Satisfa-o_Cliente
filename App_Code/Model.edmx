@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PESQUISACLIENTEModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="PESQUISACLIENTEModelStoreContainer">
+          <EntitySet Name="sysdiagrams" EntityType="PESQUISACLIENTEModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_IMPORTANCIA" EntityType="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_PESQUISA_CLIENTE" EntityType="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TB_SATISFACAO" EntityType="PESQUISACLIENTEModel.Store.TB_SATISFACAO" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5" Association="PESQUISACLIENTEModel.Store.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TB_IMPORTANCIA">
+          <Key>
+            <PropertyRef Name="ID_IMPORTANCIA" />
+          </Key>
+          <Property Name="ID_IMPORTANCIA" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NM_IMPORTANCIA" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TB_PESQUISA_CLIENTE">
+          <Key>
+            <PropertyRef Name="ID_CLIENTE" />
+          </Key>
+          <Property Name="ID_CLIENTE" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="MN_EMPRESA" Type="varbinary" Nullable="false" MaxLength="50" />
+          <Property Name="NM_NOME" Type="varbinary" Nullable="false" MaxLength="50" />
+          <Property Name="ID_IMP_QUALIDADE" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_QUALIDADE" Type="int" Nullable="false" />
+          <Property Name="ID_IMP_ATENDIMENTO" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_ATENDIMENTO" Type="int" Nullable="false" />
+          <Property Name="ID_IMP_PRAZO" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_PRAZO" Type="int" Nullable="false" />
+          <Property Name="ID_IMP_QUALIDADE_COMERCIAL" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_QUALIDADE_COMERCIAL" Type="int" Nullable="false" />
+          <Property Name="ID_IMP_CONHECIMENTO" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_CONHECIMENTO" Type="int" Nullable="false" />
+          <Property Name="ID_IMP_TECNOLOGIA" Type="int" Nullable="false" />
+          <Property Name="ID_SAT_TECNOLOGIA" Type="int" Nullable="false" />
+          <Property Name="NM_COMENTARIO" Type="varchar" Nullable="false" MaxLength="1000" />
+        </EntityType>
+        <EntityType Name="TB_SATISFACAO">
+          <Key>
+            <PropertyRef Name="ID_SATISFACAO" />
+          </Key>
+          <Property Name="ID_SATISFACAO" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NM_SATISFACAO" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_QUALIDADE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_ATENDIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_PRAZO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_QUALIDADE_COMERCIAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_CONHECIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.Store.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_TECNOLOGIA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_QUALIDADE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_ATENDIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_PRAZO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_QUALIDADE_COMERCIAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_CONHECIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.Store.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.Store.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_TECNOLOGIA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PESQUISACLIENTEModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PESQUISACLIENTEEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="sysdiagrams" EntityType="PESQUISACLIENTEModel.sysdiagrams" />
+          <EntitySet Name="TB_IMPORTANCIA" EntityType="PESQUISACLIENTEModel.TB_IMPORTANCIA" />
+          <EntitySet Name="TB_PESQUISA_CLIENTE" EntityType="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" />
+          <EntitySet Name="TB_SATISFACAO" EntityType="PESQUISACLIENTEModel.TB_SATISFACAO" />
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5">
+            <End Role="TB_IMPORTANCIA" EntitySet="TB_IMPORTANCIA" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+          <AssociationSet Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5" Association="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5">
+            <End Role="TB_SATISFACAO" EntitySet="TB_SATISFACAO" />
+            <End Role="TB_PESQUISA_CLIENTE" EntitySet="TB_PESQUISA_CLIENTE" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TB_IMPORTANCIA">
+          <Key>
+            <PropertyRef Name="ID_IMPORTANCIA" />
+          </Key>
+          <Property Name="ID_IMPORTANCIA" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NM_IMPORTANCIA" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE1" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE2" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE3" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE4" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE5" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5" FromRole="TB_IMPORTANCIA" ToRole="TB_PESQUISA_CLIENTE" />
+        </EntityType>
+        <EntityType Name="TB_PESQUISA_CLIENTE">
+          <Key>
+            <PropertyRef Name="ID_CLIENTE" />
+          </Key>
+          <Property Name="ID_CLIENTE" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="MN_EMPRESA" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+          <Property Name="NM_NOME" Type="Binary" Nullable="false" MaxLength="50" FixedLength="false" />
+          <Property Name="ID_IMP_QUALIDADE" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_QUALIDADE" Type="Int32" Nullable="false" />
+          <Property Name="ID_IMP_ATENDIMENTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_ATENDIMENTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_IMP_PRAZO" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_PRAZO" Type="Int32" Nullable="false" />
+          <Property Name="ID_IMP_QUALIDADE_COMERCIAL" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_QUALIDADE_COMERCIAL" Type="Int32" Nullable="false" />
+          <Property Name="ID_IMP_CONHECIMENTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_CONHECIMENTO" Type="Int32" Nullable="false" />
+          <Property Name="ID_IMP_TECNOLOGIA" Type="Int32" Nullable="false" />
+          <Property Name="ID_SAT_TECNOLOGIA" Type="Int32" Nullable="false" />
+          <Property Name="NM_COMENTARIO" Type="String" Nullable="false" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TB_IMPORTANCIA" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_IMPORTANCIA1" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_IMPORTANCIA2" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_IMPORTANCIA3" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_IMPORTANCIA4" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_IMPORTANCIA5" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_IMPORTANCIA" />
+          <NavigationProperty Name="TB_SATISFACAO" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+          <NavigationProperty Name="TB_SATISFACAO1" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+          <NavigationProperty Name="TB_SATISFACAO2" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+          <NavigationProperty Name="TB_SATISFACAO3" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+          <NavigationProperty Name="TB_SATISFACAO4" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+          <NavigationProperty Name="TB_SATISFACAO5" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5" FromRole="TB_PESQUISA_CLIENTE" ToRole="TB_SATISFACAO" />
+        </EntityType>
+        <EntityType Name="TB_SATISFACAO">
+          <Key>
+            <PropertyRef Name="ID_SATISFACAO" />
+          </Key>
+          <Property Name="ID_SATISFACAO" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NM_SATISFACAO" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE1" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE2" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE3" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE4" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+          <NavigationProperty Name="TB_PESQUISA_CLIENTE5" Relationship="PESQUISACLIENTEModel.FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5" FromRole="TB_SATISFACAO" ToRole="TB_PESQUISA_CLIENTE" />
+        </EntityType>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_QUALIDADE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA1">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_ATENDIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA2">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_PRAZO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA3">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_QUALIDADE_COMERCIAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA4">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_CONHECIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_IMPORTANCIA5">
+          <End Role="TB_IMPORTANCIA" Type="PESQUISACLIENTEModel.TB_IMPORTANCIA" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_IMPORTANCIA">
+              <PropertyRef Name="ID_IMPORTANCIA" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_IMP_TECNOLOGIA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_QUALIDADE" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO1">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_ATENDIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO2">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_PRAZO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO3">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_QUALIDADE_COMERCIAL" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO4">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_CONHECIMENTO" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_TB_PESQUISA_CLIENTE_TB_SATISFACAO5">
+          <End Role="TB_SATISFACAO" Type="PESQUISACLIENTEModel.TB_SATISFACAO" Multiplicity="1" />
+          <End Role="TB_PESQUISA_CLIENTE" Type="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TB_SATISFACAO">
+              <PropertyRef Name="ID_SATISFACAO" />
+            </Principal>
+            <Dependent Role="TB_PESQUISA_CLIENTE">
+              <PropertyRef Name="ID_SAT_TECNOLOGIA" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PESQUISACLIENTEModelStoreContainer" CdmEntityContainer="PESQUISACLIENTEEntities">
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="PESQUISACLIENTEModel.sysdiagrams">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_IMPORTANCIA">
+            <EntityTypeMapping TypeName="PESQUISACLIENTEModel.TB_IMPORTANCIA">
+              <MappingFragment StoreEntitySet="TB_IMPORTANCIA">
+                <ScalarProperty Name="ID_IMPORTANCIA" ColumnName="ID_IMPORTANCIA" />
+                <ScalarProperty Name="NM_IMPORTANCIA" ColumnName="NM_IMPORTANCIA" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_PESQUISA_CLIENTE">
+            <EntityTypeMapping TypeName="PESQUISACLIENTEModel.TB_PESQUISA_CLIENTE">
+              <MappingFragment StoreEntitySet="TB_PESQUISA_CLIENTE">
+                <ScalarProperty Name="ID_CLIENTE" ColumnName="ID_CLIENTE" />
+                <ScalarProperty Name="MN_EMPRESA" ColumnName="MN_EMPRESA" />
+                <ScalarProperty Name="NM_NOME" ColumnName="NM_NOME" />
+                <ScalarProperty Name="ID_IMP_QUALIDADE" ColumnName="ID_IMP_QUALIDADE" />
+                <ScalarProperty Name="ID_SAT_QUALIDADE" ColumnName="ID_SAT_QUALIDADE" />
+                <ScalarProperty Name="ID_IMP_ATENDIMENTO" ColumnName="ID_IMP_ATENDIMENTO" />
+                <ScalarProperty Name="ID_SAT_ATENDIMENTO" ColumnName="ID_SAT_ATENDIMENTO" />
+                <ScalarProperty Name="ID_IMP_PRAZO" ColumnName="ID_IMP_PRAZO" />
+                <ScalarProperty Name="ID_SAT_PRAZO" ColumnName="ID_SAT_PRAZO" />
+                <ScalarProperty Name="ID_IMP_QUALIDADE_COMERCIAL" ColumnName="ID_IMP_QUALIDADE_COMERCIAL" />
+                <ScalarProperty Name="ID_SAT_QUALIDADE_COMERCIAL" ColumnName="ID_SAT_QUALIDADE_COMERCIAL" />
+                <ScalarProperty Name="ID_IMP_CONHECIMENTO" ColumnName="ID_IMP_CONHECIMENTO" />
+                <ScalarProperty Name="ID_SAT_CONHECIMENTO" ColumnName="ID_SAT_CONHECIMENTO" />
+                <ScalarProperty Name="ID_IMP_TECNOLOGIA" ColumnName="ID_IMP_TECNOLOGIA" />
+                <ScalarProperty Name="ID_SAT_TECNOLOGIA" ColumnName="ID_SAT_TECNOLOGIA" />
+                <ScalarProperty Name="NM_COMENTARIO" ColumnName="NM_COMENTARIO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TB_SATISFACAO">
+            <EntityTypeMapping TypeName="PESQUISACLIENTEModel.TB_SATISFACAO">
+              <MappingFragment StoreEntitySet="TB_SATISFACAO">
+                <ScalarProperty Name="ID_SATISFACAO" ColumnName="ID_SATISFACAO" />
+                <ScalarProperty Name="NM_SATISFACAO" ColumnName="NM_SATISFACAO" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
